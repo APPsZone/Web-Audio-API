@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <audio id="audio" src="/red fox tavern.mp3" type="audio/mpeg"></audio>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1 id="title">JavaScript - The Web Audio API made by Apepe</h1>
+    
+    <div class="control-card">
+      <input id="volume" type="range" min="0" max="1" step="0.01" value="1" orient="vertical">
+
+      <div class="controls-wrapper">
+        <button id="playbtn" class="paused"></button>
+        <span id="time"></span>
+        <input id="seeker" type="range" min="0" max="1" step="0.01">
+        <span id="duration"></span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
